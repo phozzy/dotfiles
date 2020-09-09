@@ -38,5 +38,6 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " configure fuzzy search
+" be sure that fzf package is installed using a package manager
 call minpac#add('junegunn/fzf')
 nnoremap <C-p> :<C-u>FZF<CR>
