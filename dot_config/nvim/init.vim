@@ -41,3 +41,7 @@ nnoremap <C-p> :<C-u>FZF<CR>
 
 " configure semantic search
 call minpac#add('tpope/vim-projectionist')
+
+" install dispatch plugin
+call minpac#add('tpope/vim-dispatch')
+call minpac#add('radenling/vim-dispatch-neovim')
