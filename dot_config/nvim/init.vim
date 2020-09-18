@@ -22,3 +22,22 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 " commands to manage packates easilier with minpac
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
+
+" Add powerline like decorations
+" airline install
+call minpac#add('vim-airline/vim-airline')
+call minpac#add('vim-airline/vim-airline-themes')
+" configure airline
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+" configure fuzzy search
+" be sure that fzf package is installed using a package manager
+call minpac#add('junegunn/fzf')
+call minpac#add('junegunn/fzf.vim')
+nnoremap <C-p> :<C-u>FZF<CR>
+
+" configure semantic search
+call minpac#add('tpope/vim-projectionist')
