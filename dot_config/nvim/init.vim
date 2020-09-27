@@ -37,6 +37,8 @@ let g:airline#extensions#tabline#enabled = 1
 call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
 nnoremap <C-p> :<C-u>FZF<CR>
+" be sure that ripgrep package is installed using a package manager
+let $FZF_DEFAULT_COMMAND = 'rg --files'
 
 " configure semantic search
 call minpac#add('tpope/vim-projectionist')
