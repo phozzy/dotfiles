@@ -44,3 +44,17 @@ call minpac#add('tpope/vim-projectionist')
 " install dispatch plugin
 call minpac#add('tpope/vim-dispatch')
 call minpac#add('radenling/vim-dispatch-neovim')
+
+" install ALE asynchronous linting engine
+call minpac#add('dense-analysis/ale')
+" For JavaScript files, use `eslint` (and only eslint)
+let g:ale_linters = {
+\ 'javascript': ['eslint'],
+\}
+" Make the sign column always visible
+let g:ale_sign_column_always = 1
+" Mappings in the style of unimpaired-next
+nmap <silent> [W <Plug>(ale_first)
+nmap <silent> [w <Plug>(ale_previous)
+nmap <silent> ]w <Plug>(ale_next)
+nmap <silent> ]W <Plug>(ale_last)
