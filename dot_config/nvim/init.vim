@@ -60,3 +60,17 @@ nmap <silent> [W <Plug>(ale_first)
 nmap <silent> [w <Plug>(ale_previous)
 nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> ]W <Plug>(ale_last)
+
+" install Grepper plugin
+call minpac#add('mhinz/vim-grepper')
+" configure Grepper plugin
+let g:grepper = {}
+let g:grepper.tools = ['grep', 'git', 'rg']
+" search for the current word
+nnoremap <Leader>* :Grepper -cword -noprompt<CR>
+" search for the current selection
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
+" Open Grepper-prompt for a particular grep-alike tool
+nnoremap <Leader>g :Grepper -tool git<CR>
+nnoremap <Leader>G :Grepper -tool rg<CR>
