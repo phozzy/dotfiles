@@ -25,13 +25,14 @@ command! PackClean call minpac#clean()
 
 " Install Gruvbox vim theme
 call minpac#add('morhetz/gruvbox')
+autocmd vimenter * colorscheme gruvbox
 
 " Add powerline like decorations
 " airline install
 call minpac#add('vim-airline/vim-airline')
 call minpac#add('vim-airline/vim-airline-themes')
 " configure airline
-let g:airline_theme='minimalist'
+let g:airline_theme = 'gruvbox'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
