@@ -23,6 +23,9 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
+" Install Gruvbox vim theme
+call minpac#add('morhetz/gruvbox')
+
 " Add powerline like decorations
 " airline install
 call minpac#add('vim-airline/vim-airline')
