@@ -81,3 +81,4 @@ nnoremap <Leader>G :Grepper -tool rg<CR>
 
 " Install vim-test plugin
 call minpac#add('vim-test/vim-test')
+let test#strategy = "dispatch"
