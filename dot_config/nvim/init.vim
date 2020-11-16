@@ -2,6 +2,9 @@
 let $VIMCONFIG = stdpath("config")
 let $VIMDATA = stdpath("data")
 
+" Make the undo history persistant
+set undofile
+
 " make sure that package directories exist
 call mkdir(stdpath("config") . "/pack/bundle/start" , "p")
 call mkdir(stdpath("config") . "/pack/bundle/opt" , "p")
