@@ -103,3 +103,7 @@ call minpac#add('rust-lang/rust.vim')
 call minpac#add('fatih/vim-go')
 " Add Guile integration
 call minpac#add('HiPhish/guile.vim')
+" Read and navigate Info files in Vim
+call minpac#add('HiPhish/info.vim')
+" The universal, extendible and configurable REPL plugin
+call minpac#add('HiPhish/repl.nvim')
