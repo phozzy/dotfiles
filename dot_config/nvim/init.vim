@@ -96,3 +96,10 @@ nnoremap <Leader>G :Grepper -tool rg<CR>
 " Install vim-test plugin
 call minpac#add('vim-test/vim-test')
 let test#strategy = "dispatch"
+
+" Add Rust lang integration
+call minpac#add('rust-lang/rust.vim')
+" Add Go lang integration
+call minpac#add('fatih/vim-go')
+" Add Guile integration
+call minpac#add('HiPhish/guile.vim')
