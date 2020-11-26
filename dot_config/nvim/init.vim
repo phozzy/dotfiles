@@ -56,9 +56,20 @@ call minpac#add('radenling/vim-dispatch-neovim')
 
 " install ALE asynchronous linting engine
 call minpac#add('dense-analysis/ale')
+" enable completion from ALE
+let g:ale_completion_enabled = 1
+let g:ale_completion_autoimport = 1
+set omnifunc=ale#completion#OmniFunc
+let g:airline#extensions#ale#enabled = 1
 " For JavaScript files, use `eslint` (and only eslint)
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
+\ 'rust': ['analyzer'],
+\}
+" For JavaScript fixes, use `eslint`
+let g:ale_fixers = {
+\ 'javascript': ['eslint'],
+\ 'rust': ['analyzer'],
 \}
 " Make the sign column always visible
 let g:ale_sign_column_always = 1
