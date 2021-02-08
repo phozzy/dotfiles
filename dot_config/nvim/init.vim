@@ -5,6 +5,12 @@ let $VIMDATA = stdpath("data")
 " Make the undo history persistant
 set undofile
 
+" Make the sign column always visible
+set signcolumn=yes
+
+" Make it easy to work with buffers
+set hidden
+
 " make sure that package directories exist
 call mkdir(stdpath("config") . "/pack/bundle/start" , "p")
 call mkdir(stdpath("config") . "/pack/bundle/opt" , "p")
@@ -72,7 +78,7 @@ let g:ale_fixers = {
 \ 'rust': ['analyzer'],
 \}
 " Make the sign column always visible
-let g:ale_sign_column_always = 1
+"let g:ale_sign_column_always = 1
 " Mappings in the style of unimpaired-next
 nmap <silent> [W <Plug>(ale_first)
 nmap <silent> [w <Plug>(ale_previous)
