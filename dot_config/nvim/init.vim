@@ -34,7 +34,7 @@ command! PackClean call minpac#clean()
 
 " Install Gruvbox vim theme
 call minpac#add('morhetz/gruvbox')
-autocmd vimenter * colorscheme gruvbox
+autocmd vimenter * ++nested colorscheme gruvbox
 
 " Add powerline like decorations
 " airline install
