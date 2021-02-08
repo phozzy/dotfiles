@@ -75,8 +75,6 @@ let g:ale_fixers = {
 \ 'javascript': ['eslint'],
 \ 'rust': ['analyzer'],
 \}
-" Make the sign column always visible
-"let g:ale_sign_column_always = 1
 " Mappings in the style of unimpaired-next
 nmap <silent> [W <Plug>(ale_first)
 nmap <silent> [w <Plug>(ale_previous)
