@@ -43,6 +43,9 @@ call minpac#add('itchyny/lightline.vim')
 call minpac#add('shinchu/lightline-gruvbox.vim')
 let g:lightline = {'colorscheme': 'gruvbox'}
 
+" Add markdown preview support
+call minpac#add('iamcco/markdown-preview.nvim', {'do': 'packloadall! | call mkdp#util#install()'})
+
 " configure fuzzy search
 " be sure that fzf package is installed using a package manager
 call minpac#add('junegunn/fzf')
