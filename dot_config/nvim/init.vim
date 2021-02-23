@@ -105,7 +105,7 @@ let test#strategy = "dispatch"
 " Add Rust lang integration
 call minpac#add('rust-lang/rust.vim')
 " Add Go lang integration
-call minpac#add('fatih/vim-go')
+call minpac#add('fatih/vim-go', { 'do': ':GoUpdateBinaries' })
 " Add Guile integration
 call minpac#add('HiPhish/guile.vim')
 " Read and navigate Info files in Vim
