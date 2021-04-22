@@ -111,3 +111,7 @@ call minpac#add('HiPhish/guile.vim')
 call minpac#add('HiPhish/info.vim')
 " The universal, extendible and configurable REPL plugin
 call minpac#add('HiPhish/repl.nvim')
+" Add ruby lang integration
+call minpac#add('vim-ruby/vim-ruby')
+" Add puppet integration
+call minpac#add('rodjek/vim-puppet')
