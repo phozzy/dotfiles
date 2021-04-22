@@ -67,7 +67,6 @@ call minpac#add('dense-analysis/ale')
 let g:ale_completion_enabled = 1
 let g:ale_completion_autoimport = 1
 set omnifunc=ale#completion#OmniFunc
-let g:airline#extensions#ale#enabled = 1
 " For JavaScript files, use `eslint` (and only eslint)
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
